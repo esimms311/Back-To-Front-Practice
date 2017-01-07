@@ -1,0 +1,15 @@
+nav {
+  background-color: lightgray;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  color: green;
+  justify-content: space-around;
+  font-size: 25px;
+}
+body {
+  text-align: center;
+}
+.customersList {
+  font-size: 25px;
+}

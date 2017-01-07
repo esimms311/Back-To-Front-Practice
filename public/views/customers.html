@@ -1,0 +1,17 @@
+<h1> Customers Page</h1>
+<input type='text' ng-model='name.first'>
+<input type='text' ng-model='name.last'>
+
+<button type='button' ng-click = 'addCustomer(name)'> Add Customer</button>
+
+<div class = 'customersList' ng-repeat='customer in customers track by $index'>
+  <span ng-click="toggleInputs($index)">{{customer.first}} {{customer.last}}</span>
+  <div ng-if = "($index === selected)" class ="inputs">
+    <input type='text' name=""  ng-model='first'>
+    <input type='text' name="" ng-model='last'>
+    <button type = 'button' ng-click="update({first: first, last: last, id: $index + 1})">Update</button>
+    <button type = 'button' ng-click='delete(customer)'>Delete</button>
+  </div>
+
+
+</div>
